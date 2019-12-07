@@ -13,7 +13,7 @@ resource "github_repository" "github_management" {
   topics             = ["config", "terraform"]
 }
 
-# Set up baseline configs for the repo
+# Set up baseline configs for the repo test
 resource "github_branch_protection" "team_baseline_config" {
   repository     = github_repository.github_management.name
   branch         = "master"
