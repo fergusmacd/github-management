@@ -15,7 +15,7 @@ resource "github_repository" "github_management" {
 
 # Protect the master branch of the repository.
 resource "github_branch_protection" "team_baseline_config" {
-  repository     = "${github_repository.github_management.name}"
+  repository     = github_repository.github_management.name
   branch         = "master"
 
   required_status_checks {
