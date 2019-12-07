@@ -22,5 +22,4 @@ resource "github_branch_protection" "team_baseline_config" {
     strict = false
     contexts = ["atlas/mononoke/github-management", ]
   }
-
 }
